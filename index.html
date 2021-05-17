@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+	<div class="introComponent__wrapper">
+
+		<header class="main__header">
+			<h1 class="header__title">Bienvenidos al formulario de la I.E. "Nuevo Mundo"</h1>		
+		</header>
+
+		<form class="mainForm" method="POST" action="form.php">
+
+			<div class="mainForm__input">
+				<input type="text" name="nombre" class="mainForm__name mainForm--format" placeholder="Nombre">  
+				<img src="./images/icon-error.svg" class="icon__error hidden" alt="icon-error">
+				<p class="errorMessage hidden">El nombre no puede estar vacio</p>
+			</div>
+			<div class="mainForm__input">
+				<input type="text" name="apellido" class="mainForm__lastName mainForm--format" placeholder="Apellido">  
+				<img src="./images/icon-error.svg" class="icon__error hidden" alt="icon-error">
+				<p class="errorMessage hidden">El apellido no puede estar vacio</p>
+			</div>
+			<div class="mainForm__input">
+				<input type="tel" name="telefono" class="mainForm__password mainForm--format" placeholder="Telefono">  
+				<img src="./images/icon-error.svg" class="icon__error hidden" alt="icon-error">
+				<p class="errorMessage hidden">El numero de telefono no puede estar vacio</p>
+			</div>
+			<div class="mainForm__input">
+				<input type="email" name="correo" class="mainForm__Email mainForm--format" placeholder="Email">  
+				<img src="./images/icon-error.svg" class="icon__error hidden" alt="icon-error">
+				<p class="errorMessage hidden">Parece que no es un email</p>
+			</div>
+
+			<input type="submit" class="submit__button" value="Enviar">
+
+		</form>
+
+	</div>
+	
+<script src="./JS/index.js"></script>	
+
+</body>
+</html>

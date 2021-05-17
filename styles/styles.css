@@ -1,0 +1,169 @@
+:root {
+	/* primary */	
+	--Red: hsl(0, 100%, 74%);
+	--Green: hsl(154, 59%, 51%);
+
+	/* Accent */
+	--Blue: hsl(248, 32%, 49%);
+
+	/* Neutral */
+	--Dark-Blue: hsl(249, 10%, 26%);
+	--Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+
+	background-image: url(../images/bg-intro-desktop.png);
+	background-color: var(--Red);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.introComponent__wrapper {
+	height: 100%;
+	width: 50%;
+
+	box-sizing: border-box;	
+	padding: 50px 100px;
+}
+
+
+.main__header {
+	margin: 0;
+}
+
+.header__title {
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}
+
+.mainForm , .mainSuccess{
+	background-color: #fff;
+	border-radius: 10px;
+	box-sizing: border-box;
+
+	margin: 0 30px;  
+	padding: 30px;
+	height: 500px;
+
+	box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mainForm__input {
+	position: relative;
+}
+
+.mainForm--format {
+	width: 100%;
+
+	box-sizing: border-box;
+	padding: 15px 20px;
+	margin-bottom: 35px;
+
+	border-radius: 5px;
+	border: 1px solid #ddd; 
+}
+.mainForm--format::placeholder {
+	font-weight: 700;
+}
+
+
+.mainSuccess {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.mainSuccess__title {
+	text-align: center;
+	font-size: 32px;
+	text-transform: capitalize;
+}
+
+.hidden {
+	display: none;
+}
+
+.icon__error {
+	position: absolute;
+	top: 30%;
+	transform: translateY(-50%);
+	right: 20px;
+}
+
+.icon__check, .icon__incorrect {
+	width: 100px;
+	height: 100px;
+}
+
+.errorMessage {
+	margin: 0;
+	font-size: 12px;
+	color: var(--Red);
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+
+.submit__button, .back__button {
+	width: 100%;
+
+	background-color: var(--Green);
+
+	border: none;
+
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+
+	box-sizing: border-box;
+	padding: 20px 0;
+
+	border-radius: 10px;
+	box-shadow: 0 5px hsl(154deg 59% 42%);
+}
+.submit__button:hover, .back__button:hover {
+	transform: translateY(5px);
+	box-shadow: none;
+	transition: 0.5 all;
+	background-color: hsl(154deg 59% 42%);
+}
+
+.back__button {
+	margin-top: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
+	/*media queries*/
+
+@media screen and (max-width: 1200px){
+
+	.introComponent__wrapper {
+		height: 937px;
+		width: 375px;
+
+		padding: 50px 20px 20px;
+		margin-top: 100px;
+	}
+
+	.header__title {
+		font-size: 24px;
+	}
+
+	.mainForm {
+		margin: 0;
+	}
+		
+}
+
